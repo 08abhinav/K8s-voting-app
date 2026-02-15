@@ -1,0 +1,6 @@
+*.pyc
+project.lock.json
+bin/
+obj/
+.vscode/
+node_modules/
