@@ -38,6 +38,21 @@ The services will be available at:
 - Vote app → http://localhost:8080
 - Results app → http://localhost:8081
 
+## 📸 Screenshots
+
+### Voting Interface
+![Vote App](screenshots/vote-ui.png)
+
+### Results Dashboard
+![Results Dashboard](screenshots/results-ui.png)
+
+### Grafana Monitoring
+![Grafana Dashboard](screenshots/grafana-dashboard.png)
+
+### Prometheus Targets
+![Prometheus Query](screenshots/prometheus-dashboard.png)
+![Prometheus Query](screenshots/prometheus-dashboard.png)
+
 # Learning Objective
 This repository is used to practice:
 - Kubernetes resource creation (Deployments, Services, Volumes)
