@@ -28,7 +28,7 @@ This solution uses:
 - Redis (Message broker)
 - PostgreSQL (Persistent storage)
 
-Run in to create k8s cluster and resources:
+Run to create k8s cluster and resources:
 
 ```bash
 kind create cluster k8s-observe
@@ -40,7 +40,7 @@ Run to check for created resources
 ```bash
 kubectl get all
 ```
-- This will show all created pods, serices, deployment and replicaset
+- This will show all created pods, serices, deployment and replicaset in default namespace
 
 
 Run to access the application
@@ -60,6 +60,12 @@ helm repo update
 kubectl create namespace monitoring
 helm install kind-prometheus prometheus-community/kube-prometheus-stack --namespace monitoring --set prometheus.service.nodePort=30000 --set prometheus.service.type=NodePort --set grafana.service.nodePort=31000 --set grafana.service.type=NodePort --set alertmanager.service.nodePort=32000 --set alertmanager.service.type=NodePort --set prometheus-node-exporter.service.nodePort=32001 --set prometheus-node-exporter.service.type=NodePort
 ```
+
+Run to check for created resources
+```bash
+kubectl get all -n monitoring
+```
+- This will show all created pods, serices, deployment and replicaset in monitoring namespace
 
 Run to check resources created in monitoring namespace
 ```bash
