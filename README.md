@@ -44,14 +44,14 @@ The services will be available at:
 ![Vote App](screenshots/vote-ui.png)
 
 ### Results Dashboard
-![Results Dashboard](screenshots/results-ui.png)
+![Results Dashboard](screenshots/result-ui.png)
 
 ### Grafana Monitoring
 ![Grafana Dashboard](screenshots/grafana-dashboard.png)
 
 ### Prometheus Targets
 ![Prometheus Query](screenshots/prometheus-dashboard.png)
-![Prometheus Query](screenshots/prometheus-dashboard.png)
+![Prometheus Query](screenshots/prometheus-dashboard2.png)
 
 # Learning Objective
 This repository is used to practice:
